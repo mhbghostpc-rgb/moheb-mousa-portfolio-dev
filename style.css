@@ -14,6 +14,7 @@ body {
     background: #0a0a0f;
     color: #e0e0e0;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -702,9 +703,10 @@ footer {
     .about-stats {
         justify-content: center;
     }
-    .profile-placeholder {
-        width: 250px;
-        height: 250px;
+    .profile-placeholder,
+    .profile-image {
+        width: 280px;
+        height: 280px;
     }
 }
 
@@ -751,11 +753,20 @@ footer {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
-    .profile-placeholder {
-        width: 200px;
-        height: 200px;
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+    .profile-placeholder,
+    .profile-image {
+        width: 220px;
+        height: 220px;
         font-size: 3rem;
+    }
+    .tabs-header {
+        flex-direction: column;
     }
 }
 
